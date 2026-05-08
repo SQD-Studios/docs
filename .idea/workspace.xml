@@ -4,30 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b35d0ac-9bf7-452a-bd7f-9d0eea88d101" name="Changes" comment="Idea Hates me">
-      <change afterPath="$PROJECT_DIR$/src/assets/chamo1.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.astro/content-assets.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.astro/content-assets.mjs" afterDir="false" />
+    <list default="true" id="3b35d0ac-9bf7-452a-bd7f-9d0eea88d101" name="Changes" comment="Idea Hates me 2.0">
+      <change afterPath="$PROJECT_DIR$/astro.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/chamo1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/huh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ConfigNode.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dependency.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LinkCard.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageCards.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Version.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Video.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/overrides/MobileTableOfContents.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/overrides/PageFrame.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/overrides/SocialIcons.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/overrides/TableOfContents.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tools/ItemCommandConverter.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tools/NoteParticleColorPicker.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tools/StartScriptGenerator.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/docs/ChamoOrders/Introduction/index.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/docs/ChamoOrders/Introduction/test.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/docs/ChamoOrders/index.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.astro/collections/docs.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/.astro/collections/docs.schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.astro/content-modules.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.astro/content-modules.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.astro/data-store.json" beforeDir="false" afterPath="$PROJECT_DIR$/.astro/data-store.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/houston.CZZyCf7p.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/houston.CZZyCf7p_Z1lAhR9.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/guides/example/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/guides/example/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pagefind/fragment/en_8ff7493.pf_fragment" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pagefind/index/en_fa06c54.pf_index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pagefind/pagefind-entry.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/pagefind/pagefind-entry.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pagefind/pagefind.en_636859f2b5.pf_meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/reference/example/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/reference/example/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/docs/guides/example.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/docs/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/docs/index.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/docs/reference/example.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="NoteParticleColorPicker" />
+        <option value="ItemCommandConverter" />
+        <option value="Astro Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +69,13 @@
     &quot;accountId&quot;: &quot;8d7b2d5c-e284-4976-82fb-3141cc7d2bff&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/node_modules/@astrojs/starlight/user-components/file-tree-icons.ts" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -52,29 +84,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.localhost:4321.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.preferred.runtime.type.id": "node",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Starlight\\starlight\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.localhost:4321.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Starlight\\starlight\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Starlight\starlight\public" />
       <recent name="C:\Starlight\starlight\src\assets" />
     </key>
   </component>
@@ -82,16 +120,11 @@
     <configuration name="localhost:4321" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:4321/">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.localhost:4321" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.30387.83" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
       </set>
     </attachedChunks>
   </component>
@@ -107,6 +140,8 @@
       <workItem from="1777148893823" duration="6000" />
       <workItem from="1777148910627" duration="21000" />
       <workItem from="1777148952150" duration="3303000" />
+      <workItem from="1777548746826" duration="2250000" />
+      <workItem from="1777569547481" duration="7458000" />
     </task>
     <task id="LOCAL-00001" summary="Updated .gitignore">
       <option name="closed" value="true" />
@@ -124,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777148974436</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Idea Hates me 2.0">
+      <option name="closed" value="true" />
+      <created>1777549016221</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777549016221</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +176,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated .gitignore" />
     <MESSAGE value="Idea Hates me" />
-    <option name="LAST_COMMIT_MESSAGE" value="Idea Hates me" />
+    <MESSAGE value="Idea Hates me 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Idea Hates me 2.0" />
   </component>
 </project>

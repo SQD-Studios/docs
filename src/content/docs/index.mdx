@@ -1,5 +1,3 @@
-import { LinkCard } from '@astrojs/starlight/components';
-
 ---
 title: Welcome to the ChamoMC Documentation
 description: Documentation for every plugin under the developement of the Chamo team!
@@ -18,20 +16,23 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import {Card, CardGrid, LinkCard} from '@astrojs/starlight/components';
 
-## Next steps
+## Our Projects
 
 <CardGrid>
-	<Card title="ChamoOrders" icon="pencil">
+	<LinkCard title="ChamoOrders" href="/ChamoOrders" icon="pencil">
 		Order like on any big server! Deliver, order and strive the economy. Supports Vault and modernises such simple system!
-	</Card>
-	<LinkCard title="KuraAC" href="/KuraAC" icon="document"
-		description="The future of AntiCheats. Main focus of the ChamoMC Team, and powering the ChamoSMP! Mixes well with other ACs like GrimAC">
 	</LinkCard>
-	<Card title="VelocityABX" icon="add-document">
+	<LinkCard title="KuraAC" href="/KuraAC" icon="document">
+		The future of AntiCheats. Main focus of the ChamoMC Team and powering the ChamoSMP! Mixes well with other ACs like GrimAC
+	</LinkCard>
+	<LinkCard title="VelocityABX" icon="add-document">
 		Currently not stable, but will be soon!
-	</Card>
+	</LinkCard>
+    <LinkCard title="DupeDB GUI" href="/DupeDB-GUI" icon="document">
+        DupeDB GUI Fabric Mod. Displays a neat gui of the dupedb website!
+    </LinkCard>
 	<Card title="More planned soon!" icon="document">
 		You think you got an idea? Feel free to message us!
 	</Card>
