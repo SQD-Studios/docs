@@ -1,9 +1,0 @@
----
-import Default from "@astrojs/starlight/components/TableOfContents.astro";
-import Version from "../Version.astro";
-
-const { version } = Astro.locals.starlightRoute.entry.data;
----
-
-{version && <Version {version} />}
-<Default><slot /></Default>
