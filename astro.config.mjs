@@ -7,7 +7,7 @@ import starlightSidebarTopics from 'starlight-sidebar-topics'
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://sqdstudios.github.io',
+    site: 'https://sqd-studios.github.io',
     base: '/docs',
   integrations: [
 
