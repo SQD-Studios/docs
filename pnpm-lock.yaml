@@ -29,9 +29,6 @@ importers:
       starlight-sidebar-topics:
         specifier: ^0.8.0
         version: 0.8.0(@astrojs/starlight@0.40.0(astro@6.4.7(@types/node@24.13.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0)))
-      starlight-sidebar-topics-dropdown:
-        specifier: ^0.6.0
-        version: 0.6.0(@astrojs/starlight@0.40.0(astro@6.4.7(@types/node@24.13.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0)))(starlight-sidebar-topics@0.8.0(@astrojs/starlight@0.40.0(astro@6.4.7(@types/node@24.13.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))))
       tailwindcss:
         specifier: ^4.3.1
         version: 4.3.1
@@ -1763,13 +1760,6 @@ packages:
 
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
-
-  starlight-sidebar-topics-dropdown@0.6.0:
-    resolution: {integrity: sha512-V9a31xML6B28Eo/EZU84AqE8sjhPLjmRpo0buYtRyugRAp2vH7ZKJQDzQwpjSZen7MVb3hgYTNqBus0pdDr+XQ==}
-    engines: {node: '>=22.12.0'}
-    peerDependencies:
-      '@astrojs/starlight': '>=0.38'
-      starlight-sidebar-topics: '>=0.7'
 
   starlight-sidebar-topics@0.8.0:
     resolution: {integrity: sha512-hE8+w2vNL13h6cq3UJGl05milJQ3+1BSlhaV5V4a993YzYczU6uLAj6jfUDKQ2mmgkdVWp8/UNDF4Je/rQXNQw==}
@@ -4212,11 +4202,6 @@ snapshots:
   source-map@0.7.6: {}
 
   space-separated-tokens@2.0.2: {}
-
-  starlight-sidebar-topics-dropdown@0.6.0(@astrojs/starlight@0.40.0(astro@6.4.7(@types/node@24.13.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0)))(starlight-sidebar-topics@0.8.0(@astrojs/starlight@0.40.0(astro@6.4.7(@types/node@24.13.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0)))):
-    dependencies:
-      '@astrojs/starlight': 0.40.0(astro@6.4.7(@types/node@24.13.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))
-      starlight-sidebar-topics: 0.8.0(@astrojs/starlight@0.40.0(astro@6.4.7(@types/node@24.13.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0)))
 
   starlight-sidebar-topics@0.8.0(@astrojs/starlight@0.40.0(astro@6.4.7(@types/node@24.13.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0))):
     dependencies:
