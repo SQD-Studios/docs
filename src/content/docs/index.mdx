@@ -13,13 +13,13 @@ import { ContributorList } from "astro-contributors";
 import LinkCard from "/src/components/LinkCard.astro";
 
 <CardGrid>
-	<LinkCard title="ChamoItemSkins" icon="pencil" href="chamoitemskins/administration/introduction/installing">
+	<LinkCard title="ChamoItemSkins" icon="chamoitemskins" href="chamoitemskins/administration/introduction/installing">
         for your server to be remembered. A skin plugin, mainly for model support
 	</LinkCard>
-	<LinkCard title="ChamoParty" icon="document" href="chamoparty/administration/introduction/installing">
+	<LinkCard title="ChamoParty" icon="chamoparty" href="chamoparty/administration/introduction/installing">
         A modern VoteParty plugin with nuVotifier and MiniMessage support and a good API*. Fork of zVoteParty
 	</LinkCard>
-	<LinkCard title="ABX-Velocity" destructive icon="add-document" href="abxvelocity/administration/introduction/installing/">
+	<LinkCard title="ABX-Velocity" destructive icon="velocity" href="abxvelocity/administration/introduction/installing/">
         If a check dies the second someone reads it, it was weak anyway.
         Adds Velocity Support for the popular plugin AdvancedBanX.
 	</LinkCard>
@@ -27,11 +27,28 @@ import LinkCard from "/src/components/LinkCard.astro";
 
 
 # Our Contributors
+
 ### Documentation
-<ContributorList githubRepo="SQD-Studios/docs" />
+<ContributorList
+    githubRepo="SQD-Studios/docs"
+    focusColor="#55FFFF"
+    ignore={["dependabot[bot]"]}
+/>
 ### ChamoParty
-<ContributorList githubRepo="SQD-Studios/ChamoParty" />
+<ContributorList
+    githubRepo="SQD-Studios/ChamoParty"
+    focusColor="#55FFFF"
+    ignore={["dependabot[bot]"]}
+/>
 ### ABX-Velocity
-<ContributorList githubRepo="SQD-Studios/ABX-Velocity" />
+<ContributorList
+    githubRepo="SQD-Studios/ABX-Velocity"
+    focusColor="#55FFFF"
+    ignore={["dependabot[bot]"]}
+/>
 ### ChamoItemSkins
-<ContributorList githubRepo="SQD-Studios/ChamoItemSkins" />
+<ContributorList
+    githubRepo="SQD-Studios/ChamoItemSkins"
+    focusColor="#55FFFF"
+    ignore={["dependabot[bot]"]}
+/>

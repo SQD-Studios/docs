@@ -18,7 +18,7 @@ export default defineConfig({
                         {
                             label: 'ABX Velocity',
                             link: '/abxvelocity/administration/introduction/installing',
-                            icon: 'open-book',
+                            icon: 'velocity',
                             items: [
                                 {
                                     label: "Administration",
@@ -35,7 +35,7 @@ export default defineConfig({
                         {
                             label: 'ChamoParty',
                             link: '/chamoparty/administration/introduction/installing',
-                            icon: 'information',
+                            icon: 'chamoparty',
                             items: [
                                 {
                                     label: "Administration",
@@ -52,7 +52,7 @@ export default defineConfig({
                         {
                             label: 'ChamoItemSkins',
                             link: '/chamoitemskins/administration/introduction/installing',
-                            icon: 'inventory',
+                            icon: 'chamoitemskins',
                             items: [
                                 {
                                     label: "Administration",
@@ -77,6 +77,7 @@ export default defineConfig({
                 Footer: './src/components/overrides/Footer.astro',
                 Banner: './src/components/overrides/Banner.astro',
                 Sidebar: './src/components/Sidebar.astro',
+                SocialIcons: './src/components/overrides/SocialIcons.astro',
             },
             editLink: {
                 baseUrl: 'https://github.com/SQD-Studios/docs/tree/master/',
