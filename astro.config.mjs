@@ -8,7 +8,7 @@ import starlightSidebarTopics from 'starlight-sidebar-topics'
 // https://astro.build/config
 export default defineConfig({
     site: 'https://sqdstudios.github.io',
-    base: '/docs',
+    base: 'docs/',
   integrations: [
 
       starlight({
@@ -66,7 +66,11 @@ export default defineConfig({
                           },
                       ],
                   },
-              ]),
+              ],
+                  {
+                      exclude: ['/nu/javadocs/selection']
+                  }
+                  ),
 
           ],
           title: 'SQD Studios Documentation',
@@ -87,7 +91,7 @@ export default defineConfig({
           logo: {
           src: './src/assets/SQDStudios.webp',
           },
-          social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/SQD-Studios/' }],
+          social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/SQD-Studios/'}, {icon: 'seti:java', label: 'Javados', href: 'nu/javadocs/selection'},],
 
       }),
 	],
