@@ -68,7 +68,7 @@ export default defineConfig({
                         },
 
                     ], {
-                    exclude: ['/nu/javadocs/**/*']
+                        exclude: ['/nu/javadocs/**/*']
                     }
                 )
             ],
@@ -91,11 +91,23 @@ export default defineConfig({
             logo: {
                 src: './src/assets/SQDStudios.webp',
             },
-            social: [{icon: 'github', label: 'GitHub', href: 'https://github.com/SQD-Studios/'}, {
-                icon: 'seti:java',
-                label: 'Javados',
-                href: '/docs/nu/javadocs/selection'
-            },],
+            social: [
+                {
+                    icon: 'github',
+                    label: 'GitHub',
+                    href: 'https://github.com/SQD-Studios/'
+                },
+                {
+                    icon: 'seti:java',
+                    label: 'Javados',
+                    href: '/docs/nu/javadocs/selection'
+                },
+                {
+                    icon: 'discord',
+                    label: 'Discord',
+                    href: 'https://discord.gg/YmQs87ZTBB'
+                }
+            ],
 
         }),
     ],
