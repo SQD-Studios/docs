@@ -10,7 +10,6 @@ export default defineConfig({
     site: 'https://sqdstudios.github.io',
     base: 'docs/',
     integrations: [
-
         starlight({
             favicon: 'favicon.ico',
             plugins: [
@@ -59,7 +58,12 @@ export default defineConfig({
                                     items: [
                                         {
                                             label: "Introduction",
-                                            items: ['chamoitemskins/administration/introduction/installing'],
+                                            items: [
+                                                'chamoitemskins/administration/introduction/installing',
+                                                'chamoitemskins/administration/introduction/understanding',
+                                                'chamoitemskins/administration/introduction/configuring',
+                                                'chamoitemskins/administration/introduction/selfpack',
+                                            ],
                                         },
 
                                     ]
