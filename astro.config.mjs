@@ -12,6 +12,7 @@ export default defineConfig({
     integrations: [
         starlight({
             favicon: 'favicon.ico',
+            disable404Route: true,
             plugins: [
                 starlightSidebarTopics([
                         {
