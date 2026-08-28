@@ -1,0 +1,247 @@
+---
+title: Configuring ChamoItemSkins
+description: "Configure ChamoItemSkins to your needs"
+---
+
+ChamoItemSkins is a config heavy plugin, so I recommend you paying this a visit often, for changes
+
+# Configuring the main configuration
+
+Your `config.yml` should look
+like [this](https://github.com/SQD-Studios/ChamoItemSkins/blob/master/plugin/src/main/resources/config.yml) (And if it
+doesn't look like this, something went wrong and report it).
+
+### Rarities
+
+An example configuration is:
+
+```yaml
+rarities:
+  enabled: true # If the rarities should be enabled (Default: true)
+  # The rarities
+  common: # Rarity "ID"
+    name: Common # Rarity name
+    color: "<gray>" # Rarity color (Supports Mini Message)
+    priority: 0 # The priority for the tier, e.g., we want common as our first "tier"
+  # And goes on...
+  rare:
+    name: Rare
+    color: "<blue>"
+    priority: 1
+```
+
+### Database
+
+A remote database may be used to share this data between servers:
+
+- Grants
+- Favorite Skins
+- Database Logs
+- Active skins
+
+This is an example configuration:
+```yaml
+database:
+
+  # Choose MySQL or SQLite
+  # MySQL (For multiserver support (Not tested))
+  # SQLite (Great lightweight solution)
+  type: sqlite
+
+  # MySQL Only (That means these options only count when on MySQL)
+  host: localhost # The host of the MySQL Database
+  port: 3306 # The port of the MySQL Database
+  database: chamoitemskins # Which database should be used?
+  username: root # The username of the use of the MySQL Database
+  password: "" # The password of the MySQL Database
+
+  # SQLite Only (That means these options only count when on SQLite)
+  sqlite-file: plugins/ChamoItemSkins/data.db # Where should the SQLite file be? Can be left as is
+```
+
+### Cache
+
+For how much time should the skin grants be cached until fetching the database again?
+
+```yaml
+cache:
+  ttl-seconds: 300 # Time to live seconds
+```
+
+### Filler
+
+Options for the GUI Filler:
+
+```yaml
+filler:
+  filler-item: true # Should it fill the guis or not?
+  item: # The item to fill the GUIs with
+    material: GRAY_STAINED_GLASS_PANE # The material of the item
+    name: " " # The name of the item
+    lore: [] # The lore of the item
+    glow: false # Should it glow?
+```
+
+### Note
+
+Options for the notes
+
+```yaml
+note:
+  default-material: PAPER # The material of the item
+  display-name: "{skin_name} <i><dark_gray>[Permanent Skin Note]" # The name of the note, if it grants a permanent note. You can put {time_left} there, and it will default to Permanent
+  temporary-name: "{skin_name} <i><dark_gray>[{time_left} Day(s) Skin Note]" # The name of the note when not permanent
+  lore: # The lore of the item
+    - "" # You can put the above placeholders here too
+```
+
+### Filter
+
+This is for the gui filter, showing how to display the selected category
+
+```yaml
+filter:
+  chosen-character: " > {category}" # Pretty self explanatory
+```
+
+### Selfpack
+
+This is for hosting a texture pack for the plugin. It will automatically apply it to players. You will need an open port and may affect perfomance. You also have the option for the plugin to make the texture pack for you
+
+```yaml
+selfpack:
+  enable: true
+  port: 32768 # An open port to host the server to
+  ip: localhost # IMPORTANT. CHANGE THIS OR IT WILL NOT WORK CORRECTLY
+
+
+  # This is pre-make only
+  pre-make: false # When true, if you put the models in the selfpack/models and the textures into selfpack/models/textures. If false we expect you to put a texture pack in selfpack/resourcepack.zip (The resourcepack.zip should be your pack)
+  description: "Server Resource Pack" # The description of the resource pack.
+```
+
+### Categories
+
+Explained in the Core Concepts section. Example configuration:
+
+```yaml
+categories:
+  sword:
+    name: Sword # The name of the category
+    items: # If it is not a full item id it will just search if it contains it. E.g. for sword it will be applicable on all sword skins. If it is DIAMOND_SWORD it can be only applied to a diamond sword
+      - SWORD
+  # And goes on...
+  picks:
+    name: Pickaxe
+    items:
+      - PICKAXE
+```
+
+### Favorites
+
+Define if this should be enabled, and how players can favorite an item:
+
+```yaml
+favorites:
+  enabled: true # Should this be enabled or not?
+  favorite-click: SHIFTCLICK # Allowed options: SHIFTCLICK, RIGHTCLICK. How players can favorite the item
+```
+
+### Other
+
+This section describes other small settings, that are too smal for their own section
+
+```yaml
+
+# Language
+# --------
+# Believe some messages are inlined and should be configured? You can make an issue on GitHub!
+# https://github.com/SQD-Studios/ChamoItemSkins/issues/new
+language: en
+```
+
+# Adding a new skin
+
+You can add a new skin in `skins.yml`. For example, this is how a skin looks like:
+
+```yaml
+skins:
+  blue_wizard: # The yaml key, can be whatever you want
+    id: blue_wizard # The id for the skin, used for a lot of the internal actions, we recommend you using lowercase and instead of spaces use "_"
+    name: <gradient:blue:light_purple>Blue Wizard # The display name of the skin
+    model-id: blue_wizard # The model id of the skin, found in your texture pack. If using selfpack texture pack generation, it's the name of that file. By default the namespace is: "chamoitemskins", but you can change it by adding you own in the front like "yournamespace:blue_wizard"
+    # You can put the namespace as "nexo:", to make the plugin use a nexo item
+    enabled: true # If the skin should be enabled
+    categories: # Which categories it's in. You can find the categories in your config.yml
+      - SWORD
+      - AXE
+      - SHIELD
+      - PICKAXE
+      - BOW
+      - CROSSBOW
+      - SHOVEL
+      - SPEAR
+      - MACE
+      - HOE
+    display-item: # The display item, for guis
+      id: DIAMOND_SWORD # The Material ID, used when the model could not be applied
+      name: <gradient:blue:light_purple>Blue Wizard # The name
+      lore:
+        - <gray>Wizardous, as always. # The lore of the display item
+      glow: true # Should it glow?
+    rarity: common # Which rarity it is, can be deleted if the rarities are disabled (In the config.yml)
+    note-material: PAPER # For notes, what material should it use? Can be deleted
+```
+
+This example showcases everything you can configure to make a skin.
+
+# Adding a new bundle
+
+You can add a new bundle in `skins.yml`. For example, this is how it looks like:
+
+```yaml
+bundles:
+  sky_bundle:
+    id: sky_bundle # The id of the bundle, used for internal actions. We reccomend you having it lowercase, and replace spaces with "_"
+    name: "Sky Bundle" # The name of the bundle, can contain MiniMessage tags
+    skins: # The skins it contains
+      - sky_meteor 
+```
+
+# Adding a new language
+
+Creating new language files is easy. You just copy the default language file (For now: "en"), rename it to whatever you want and change the keys inside. Then you put the file name like this in `config.yml`:
+`language: (file name)`
+
+# Configuring the guis
+
+The plugins allows configuring 3 GUIs, in 2 files. One is the "admin" file, and the other is the "user" file. Both can be found in `./guis`.
+
+For example this is a gui (The skin selection gui, has a `selection-` prefix in the `title`, `size` and `slots` sections):
+
+```yaml
+title: <gradient:gold:yellow>Skins # The title of the GUI, supports MiniMessage
+size: 36 # The size of the GUI, must be a multiple of 9, and not exceed 54
+slots: # The items it should put in the gui
+  sword: # Can be anything
+    slot: 10 # The slot the item should be in
+    type: ActionSlot # Can be `ActionSlot`, `Decorative`, `FilterSlot`, `BackSlot`, `SearchSlot`, `NextPage` and `PreviousPage`
+
+    # ActionSlot only. Only thing it can do is get you in a category (By using the CATEGORY_ prefix) and then the name of the category
+    action: CATEGORY_SWORD
+
+    material: DIAMOND_SWORD # The material of the item
+    name: <red>Sword Skins # The name of the item, supports MiniMessage
+    lore: # The lore of the item, supports MiniMessage
+      - <gray>Click to browse skins for swords.
+    glow: true
+  # And goes on for any item you want in the GUI
+  pickaxe:
+    slot: 11
+    type: ActionSlot
+    action: CATEGORY_PICKAXE
+    material: DIAMOND_PICKAXE
+    name: <aqua>Pickaxe Skins
+    lore:
+      - <gray>Click to browse skins for pickaxes.
+```

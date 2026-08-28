@@ -1,5 +1,6 @@
 ---
 title: Installing ChamoItemSkins
+description: "Install ChamoItemSkins in your server"
 ---
 
 Installing _ChamoItemSkins_, is simple an any other plugins.

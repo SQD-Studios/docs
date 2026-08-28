@@ -1,5 +1,6 @@
 ---
 title: Understanding concepts of ChamoItemSkins
+description: "Understand core concepts of ChamoItemSkins"
 ---
 
 ChamoItemSkins is not a simple plugin, nor an advanced plugin. For example, I (The one writing this), understand this
@@ -20,7 +21,7 @@ the player had a skin before the bundle was granted to him
 # Skins
 
 **Skins**, are "Skins" for items players have. It can have "Categories", which determine which items it can be applied
-to. After a player applies the skin through the GUI, it applies a model (A texture pack item texture) in all the items
+to. After a player applies the skin through the GUI, it applies a model (A texture pack item texture) or a Nexo Item in all the items
 of the same type the player was holding when applying the skin
 
 # Grants

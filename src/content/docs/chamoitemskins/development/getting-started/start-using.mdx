@@ -1,0 +1,60 @@
+---
+title: "Start using the ChamoItemSkins API"
+---
+
+import {TabItem, Tabs} from "@astrojs/starlight/components";
+
+
+### Adding the dependency
+
+We host the API on our own maven repository, which you can add with these blocks of code:
+
+<Tabs syncKey="build-system">
+    <TabItem label="Gradle">
+        ```kotlin title="build.gradle.kts" replace
+        repositories {
+            maven {
+                name = "chamosmpRepoReleases"
+                url = uri("https://maven.chamosmp.net/releases")
+            }
+        }
+
+        dependencies {
+            compileOnly("net.chamosmp.chamoitemskins:api:{verion}")
+        }
+        ```
+    </TabItem>
+    <TabItem label="Maven">
+
+        ```xml title="pom.xml" replace
+        <project>
+            <repositories>
+                <repository>
+                    <id>chamosmp-repo-releases</id>
+                    <name>ChamoSMP Maven Repository</name>
+                    <url>https://maven.chamosmp.net/releases</url>
+                </repository>
+            </repositories>
+
+            <dependencies>
+                <dependency>
+                    <groupId>net.chamosmp.chamoitemskins</groupId>
+                    <artifactId>api</artifactId>
+                    <version>1.0.0</version>
+                </dependency>
+            </dependencies>
+        </project>
+        ```
+    </TabItem>
+</Tabs>
+
+### Getting the API instance
+
+Get the api class through the Bukkit services manager like this:
+
+```java
+ChamoItemSkinsApi api = Bukkit.getServicesManager().load(ChamoItemSkinsApi.class);
+if (api != null) {
+    // Use the api here
+}
+```

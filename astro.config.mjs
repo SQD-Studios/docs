@@ -50,7 +50,8 @@ export default defineConfig({
                         },
                         {
                             label: 'ChamoItemSkins',
-                            link: '/chamoitemskins/administration/introduction/installing',
+                            id: "chamoitemskins",
+                            link: '/chamoitemskins',
                             icon: 'chamoitemskins',
                             items: [
                                 {
@@ -61,19 +62,59 @@ export default defineConfig({
                                             items: [
                                                 'chamoitemskins/administration/introduction/installing',
                                                 'chamoitemskins/administration/introduction/understanding',
+                                                'chamoitemskins/administration/introduction/migration',
                                                 'chamoitemskins/administration/introduction/configuring',
                                                 'chamoitemskins/administration/introduction/selfpack',
+                                                'chamoitemskins/administration/introduction/editor',
                                             ],
                                         },
-
+                                        {
+                                            label: "Commands, permissions and placeholders",
+                                            items: [
+                                                'chamoitemskins/administration/commandsetc/commands',
+                                                'chamoitemskins/administration/commandsetc/permissions',
+                                                'chamoitemskins/administration/commandsetc/placeholders',
+                                            ],
+                                        },
                                     ]
                                 },
+                                {
+                                    label: "Development",
+                                    items: [
+                                        {
+                                            label: "Getting started",
+                                            items: [
+                                                'chamoitemskins/development/getting-started/start-using',
+                                                'chamoitemskins/development/getting-started/examples',
+                                            ],
+                                        },
+                                        {
+                                            label: "API",
+                                            items: [
+                                                {
+                                                    label: "Services",
+                                                    items: [
+                                                        'chamoitemskins/development/api/service/category',
+                                                        'chamoitemskins/development/api/service/favorite',
+                                                        'chamoitemskins/development/api/service/grant',
+                                                        'chamoitemskins/development/api/service/migrate',
+                                                        'chamoitemskins/development/api/service/rarity',
+                                                        'chamoitemskins/development/api/service/skin',
+                                                    ],
+                                                },
+                                                'chamoitemskins/development/api/events',
+                                            ],
+                                        }
+                                    ],
+                                }
                             ],
                         },
 
                     ], {
-                        exclude: ['/nu/javadocs/**/*']
-                    }
+                        exclude: [
+                            '/nu/javadocs/**/*',
+                        ]
+                    },
                 )
             ],
             title: 'SQD Studios Documentation',
